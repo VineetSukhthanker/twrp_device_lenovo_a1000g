@@ -1,0 +1,10 @@
+# mount point	fstype		device			[device2]			flags
+
+/boot		emmc		boot				flags=display="Boot";backup=1;flashimg=1
+/cache		ext4		/dev/block/mmcblk0p4		flags=display="Cache";canbewiped;wipeingui;wipeduringfactoryreset
+/data		ext4		/dev/block/mmcblk0p5		flags=length=-16384;display="Data";backup=1;canbewiped;wipeingui;wipeduringfactoryreset;settingsstorage
+/misc		emmc		misc				flags=display="Parametr";backup=1
+/recovery	emmc		recovery			flags=display="Recovery";backup=1;flashimg=1
+/sdcard	vfat		/dev/block/mmcblk0p6		flags=display="Internal SD";storage;settingsstorage;wipeingui
+/system	ext4		/dev/block/mmcblk0p3		flags=display="System";backup=1;canbewiped;wipeingui
+/system/secro	ext4		/dev/block/mmcblk0p2		flags=display="Secro";backup=1;flashimg=1
